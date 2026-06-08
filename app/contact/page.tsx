@@ -1,0 +1,3 @@
+import { Metadata } from "next";
+export const metadata: Metadata = { title: "Contact", description: "Contact Brain Vibration for eBook support, collaborations and article inquiries." };
+export default function ContactPage() { return <main><section className="contactPage shell"><a className="backLink" href="/">← Brain Vibration</a><div><p className="eyebrow">Contact</p><h1>Send a message to Brain Vibration.</h1><p className="lead">For eBook support, article inquiries, collaborations and page-related work.</p></div><form><input placeholder="Your name" /><input placeholder="Your email" type="email" /><textarea placeholder="Your message" rows={6} /><button type="button">Send Message</button></form></section></main>; }
