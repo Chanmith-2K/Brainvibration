@@ -26,12 +26,11 @@ export default function Home() {
           <h2>{book.englishTitle}</h2>
           <p className="lead">{book.subtitle}</p>
           <div className="bookInfo"><span>{book.author}</span><span>{book.price}</span><span>{book.format}</span></div>
-          <div className="actions"><a className="btn primary" href={whatsappLink}>WhatsApp හරහා මිලදී ගන්න</a><a className="btn ghost" href="#chapters">පරිච්ඡේද බලන්න</a></div>
+          <div className="actions"><a className="btn primary" href={whatsappLink}>WhatsApp Order</a><a className="btn ghost" href={book.samplePdf}>Sample PDF Download</a><a className="btn ghost" href="#chapters">පරිච්ඡේද බලන්න</a></div>
         </div>
         <div className="bookStage">
           <div className="bookCover">
             <img src={book.cover} alt="Brain Vibration book cover" />
-            <div className="coverText"><span>Brain Vibration</span><strong>{book.title}</strong><small>{book.author}</small></div>
           </div>
         </div>
       </section>
@@ -39,6 +38,12 @@ export default function Home() {
       <section className="section shell" id="chapters">
         <div className="sectionHead"><div><p className="eyebrow">පොතේ අන්තර්ගතය</p><h2>පරිච්ඡේද 12</h2></div><a className="textLink" href={whatsappLink}>WhatsApp හරහා ඇණවුම් කරන්න →</a></div>
         <div className="chapterGrid">{chapters.map((chapter) => <article className="chapterCard" key={chapter.no}><span>{chapter.no}</span><h3>{chapter.title}</h3><p>{chapter.text}</p></article>)}</div>
+      </section>
+
+      <section className="buyGuide shell">
+        <p className="eyebrow">මිලදී ගන්නා ආකාරය</p>
+        <h2>WhatsApp හරහා සරලව ඇණවුම් කරන්න.</h2>
+        <div className="guideGrid"><div><strong>01</strong><p>WhatsApp Order button එක click කරන්න.</p></div><div><strong>02</strong><p>පොත මිලදී ගන්න ඕන කියලා message එක යවන්න.</p></div><div><strong>03</strong><p>Payment details ලැබුණාට පස්සේ ගෙවීම confirm කරන්න.</p></div><div><strong>04</strong><p>Confirm වුණාට පස්සේ PDF eBook එක WhatsApp හරහා ලැබේ.</p></div></div>
       </section>
 
       <section className="section shell" id="articles">
@@ -49,7 +54,7 @@ export default function Home() {
       <section className="section shell aboutPreview">
         <p className="eyebrow">Brain Vibration ගැන</p>
         <h2>මනස, නිහඬතාවය සහ ස්වයං සංවර්ධනය ගැන ගැඹුරු සිංහල ලිවීමක්.</h2>
-        <p>Brain Vibration කියන්නේ මනස, හැඟීම්, අවබෝධය, නිහඬතාවය සහ අභ්‍යන්තර පරිවර්තනය ගැන සරලව කතා කරන දැනුම් අවකාශයක්. මේ පිටුව පොත, පරිච්ඡේද සහ WhatsApp ඇණවුම සඳහා සකස් කරලා තියෙනවා.</p>
+        <p>Brain Vibration කියන්නේ මනස, හැඟීම්, අවබෝධය, නිහඬතාවය සහ අභ්‍යන්තර පරිවර්තනය ගැන සරලව කතා කරන දැනුම් අවකාශයක්.</p>
         <a className="textLink" href={whatsappLink}>WhatsApp පණිවිඩයක් යවන්න →</a>
       </section>
       <footer className="footer shell"><span>© 2026 Brain Vibration</span><a href={whatsappLink}>WhatsApp Order</a></footer>
