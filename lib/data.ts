@@ -9,9 +9,9 @@ export const book = {
   price: "රු. 600",
   format: "PDF eBook",
   subtitle: "මනසේ ඝෝෂාවෙන් නිහඬතාවයට, පැහැදිලිභාවයට සහ අභ්‍යන්තර ශක්තියට යන සරල මගපෙන්වීමක්.",
-  description: "මේ පොත මනස තුළ ඇති නොපෙනෙන ඝෝෂාව, පරණ මතක, හැඟීම්, අවධානය, විනය, නිහඬතාවය සහ අරමුණ ගැන සරලව කතා කරන Brain Vibration digital book එකක්. කියවන කෙනෙකුට තමන්ගේම ඇතුළත සිදුවන දේවල් තේරුම් ගන්න, ජීවිතය ගැන පැහැදිලි දැක්මක් හදාගන්න සහ දිනපතා ක්‍රියාවෙන් වෙනස් වෙන්න උපකාරී වෙන විදිහට මේක ලියා ඇත.",
+  description: "ඝෝෂාවෙන් ඔබ්බට කියන්නේ Brain Vibration තුළින් ලියවුණු මනස, හැඟීම්, මතක, අවධානය, අරමුණ සහ නිහඬතාවය ගැන ගැඹුරින් කතා කරන සිංහල digital book එකක්. මේ පොත සාමාන්‍ය motivational වචන එකතුවක් නෙවෙයි. තමන්ගේ ඇතුළත සිදුවන නොපෙනෙන ගැටුම් හඳුනාගෙන, මනස තුළ ඇති ඝෝෂාවෙන් ටිකෙන් ටික ඉවත් වෙලා, පැහැදිලි සිතුවිල්ලක්, අභ්‍යන්තර විනයක් සහ සන්සුන් ජීවිත දිශාවක් හදාගන්න උදව් කරන ප්‍රායෝගික මගපෙන්වීමක්.",
   cover: "https://raw.githubusercontent.com/Chanmith-2K/Brainvibration/main/Book%20Cover.png",
-  samplePdf: "https://raw.githubusercontent.com/Chanmith-2K/Brainvibration/main/beyond_the_noise_english_sample.pdf"
+  samplePdf: "https://raw.githubusercontent.com/Chanmith-2K/Brainvibration/main/beyond-the-noise-sample%20%282%29.pdf"
 };
 
 export const chapters = [
