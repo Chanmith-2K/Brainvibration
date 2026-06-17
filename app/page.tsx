@@ -9,7 +9,7 @@ function Header() {
     <header className="navWrap">
       <nav className="nav shell">
         <a className="brand" href="/" aria-label="Brain Vibration Home"><LogoMark /><span>Brain Vibration</span></a>
-        <div className="navLinks"><a href="#book">Book</a><a href="#chapters">Chapters</a><a href="#articles">Articles</a><a href={whatsappLink}>WhatsApp</a></div>
+        <div className="navLinks"><a href="#book">පොත</a><a href="#chapters">පරිච්ඡේද</a><a href="#articles">ලිපි</a><a href={whatsappLink}>WhatsApp</a></div>
       </nav>
     </header>
   );
@@ -21,36 +21,36 @@ export default function Home() {
       <Header />
       <section className="oldHero shell" id="book">
         <div className="oldHeroCopy">
-          <p className="eyebrow">Brain Vibration Digital Book</p>
-          <h1>{book.sinhalaTitle}</h1>
-          <h2>{book.title}</h2>
+          <p className="eyebrow">Brain Vibration ඩිජිටල් පොත</p>
+          <h1>{book.title}</h1>
+          <h2>{book.englishTitle}</h2>
           <p className="lead">{book.subtitle}</p>
-          <div className="bookInfo"><span>{book.author}</span><span>{book.price}</span><span>PDF eBook</span></div>
-          <div className="actions"><a className="btn primary" href={whatsappLink}>Buy on WhatsApp</a><a className="btn ghost" href="#chapters">View Chapters</a></div>
+          <div className="bookInfo"><span>{book.author}</span><span>{book.price}</span><span>{book.format}</span></div>
+          <div className="actions"><a className="btn primary" href={whatsappLink}>WhatsApp හරහා මිලදී ගන්න</a><a className="btn ghost" href="#chapters">පරිච්ඡේද බලන්න</a></div>
         </div>
         <div className="bookStage">
           <div className="bookCover">
-            <img src={book.cover} alt={`${book.title} book cover`} />
+            <img src={book.cover} alt="Brain Vibration book cover" />
             <div className="coverText"><span>Brain Vibration</span><strong>{book.title}</strong><small>{book.author}</small></div>
           </div>
         </div>
       </section>
 
       <section className="section shell" id="chapters">
-        <div className="sectionHead"><div><p className="eyebrow">Book Structure</p><h2>Chapters</h2></div><a className="textLink" href={whatsappLink}>Order via WhatsApp →</a></div>
+        <div className="sectionHead"><div><p className="eyebrow">පොතේ අන්තර්ගතය</p><h2>පරිච්ඡේද 12</h2></div><a className="textLink" href={whatsappLink}>WhatsApp හරහා ඇණවුම් කරන්න →</a></div>
         <div className="chapterGrid">{chapters.map((chapter) => <article className="chapterCard" key={chapter.no}><span>{chapter.no}</span><h3>{chapter.title}</h3><p>{chapter.text}</p></article>)}</div>
       </section>
 
       <section className="section shell" id="articles">
-        <div className="sectionHead"><div><p className="eyebrow">Knowledge Library</p><h2>Latest Articles</h2></div></div>
+        <div className="sectionHead"><div><p className="eyebrow">Brain Vibration ලිපි</p><h2>නවතම ලිපි</h2></div></div>
         <div className="grid three">{articles.map((article) => <a className="articleCard" href={`/articles/${article.slug}`} key={article.title}><img src={article.image} alt={article.alt} /><div><span>{article.category}</span><h3>{article.title}</h3><p>{article.excerpt}</p><small>{article.readTime}</small></div></a>)}</div>
       </section>
 
       <section className="section shell aboutPreview">
-        <p className="eyebrow">About Brain Vibration</p>
-        <h2>Deep Sinhala writing for inner clarity and self-development.</h2>
-        <p>Brain Vibration shares spiritual psychology, mind-system ideas and practical reflections in a simple, human way. This page is focused on the book, its chapters and direct WhatsApp ordering.</p>
-        <a className="textLink" href={whatsappLink}>Message on WhatsApp →</a>
+        <p className="eyebrow">Brain Vibration ගැන</p>
+        <h2>මනස, නිහඬතාවය සහ ස්වයං සංවර්ධනය ගැන ගැඹුරු සිංහල ලිවීමක්.</h2>
+        <p>Brain Vibration කියන්නේ මනස, හැඟීම්, අවබෝධය, නිහඬතාවය සහ අභ්‍යන්තර පරිවර්තනය ගැන සරලව කතා කරන දැනුම් අවකාශයක්. මේ පිටුව පොත, පරිච්ඡේද සහ WhatsApp ඇණවුම සඳහා සකස් කරලා තියෙනවා.</p>
+        <a className="textLink" href={whatsappLink}>WhatsApp පණිවිඩයක් යවන්න →</a>
       </section>
       <footer className="footer shell"><span>© 2026 Brain Vibration</span><a href={whatsappLink}>WhatsApp Order</a></footer>
     </main>
