@@ -1,4 +1,6 @@
-export const whatsappLink = "https://wa.me/?text=මට%20Brain%20Vibration%20පොත%20ගැන%20විස්තර%20දැනගන්න%20ඕන";
+export const whatsappNumber = "94" + "776473330";
+export const whatsappText = "Brain Vibration potha miladi ganna oni";
+export const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappText)}`;
 
 export const book = {
   title: "ඝෝෂාවෙන් ඔබ්බට",
@@ -7,7 +9,8 @@ export const book = {
   price: "රු. 500",
   format: "PDF eBook",
   subtitle: "මනසේ ඝෝෂාවෙන් නිහඬතාවයට, පැහැදිලිභාවයට සහ අභ්‍යන්තර ශක්තියට යන සරල මගපෙන්වීමක්.",
-  cover: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=900&q=90"
+  cover: "https://raw.githubusercontent.com/Chanmith-2K/Brainvibration/main/Book%20Cover.png",
+  samplePdf: "https://raw.githubusercontent.com/Chanmith-2K/Brainvibration/main/beyond_the_noise_english_sample.pdf"
 };
 
 export const chapters = [
@@ -32,7 +35,7 @@ export const articles = [
 ];
 
 export const ebooks = [
-  { slug: "beyond-the-noise", title: book.title, subtitle: book.subtitle, price: "5.00", currency: "USD", cover: book.cover }
+  { slug: "beyond-the-noise", title: book.title, subtitle: book.subtitle, price: "500", currency: "LKR", cover: book.cover }
 ];
 
 export const categories = ["මනස", "ස්වයං සංවර්ධනය", "අවබෝධය", "නිහඬතාවය"];
